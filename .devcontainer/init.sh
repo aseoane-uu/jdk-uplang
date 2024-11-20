@@ -7,9 +7,7 @@ cd ${SCRIPT_PATH}/..
 
 bash configure --with-boot-jdk=/home/vscode/jdk-23.0.1/ --with-native-debug-symbols=internal --disable-warnings-as-errors
 bash configure --with-boot-jdk=/home/vscode/jdk-23.0.1/ --with-debug-level=slowdebug --with-native-debug-symbols=internal --disable-warnings-as-errors
-make CONF=rel compile-commands
-make images CONF=release
+make CONF=slow compile-commands
 make images CONF=slow
-make CONF=rel
-make CONF=slow
+make hotspot CONF=slow
 exit
