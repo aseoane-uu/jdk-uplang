@@ -9,6 +9,5 @@ WORKDIR /home/vscode
 RUN wget https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.tar.gz
 RUN tar -xvf jdk-23_linux-x64_bin.tar.gz
 RUN rm jdk-23_linux-x64_bin.tar.gz
-RUN wget https://github.com/dacapobench/dacapobench/releases/download/v9.12-bach/dacapo-9.12-bach.jar
 
 ## Post install
