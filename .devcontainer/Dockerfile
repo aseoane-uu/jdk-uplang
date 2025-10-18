@@ -5,6 +5,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 # extra for Docker-dev
 USER vscode
 WORKDIR /home/vscode
-RUN wget https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.tar.gz
-RUN tar -xvf jdk-23_linux-x64_bin.tar.gz
-RUN rm jdk-23_linux-x64_bin.tar.gz
+RUN wget https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz
+RUN tar -xvf jdk-25_linux-x64_bin.tar.gz
+RUN rm jdk-25_linux-x64_bin.tar.gz
